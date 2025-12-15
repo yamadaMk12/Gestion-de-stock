@@ -60,59 +60,7 @@ async function startTheShow(token) {
   await axios.post(
     'https://zona-backend-production.onrender.com/prediction/predict/custom',
     {
-      'prompt': `[Intro]
-
-
-
-[Verse]
-In the world of code, a framework shines bright  
-React JS, a puzzle that keeps me up at night  
-Components and states, tangled in my mind  
-Every prop I pass, feels like I'm in a bind  
-
-[Pre-Chorus]  
-But I push through the struggle, gotta learn the way  
-With every line I write, I’m closer every day  
-
-[Chorus]  
-React, oh React, you’re a mountain to climb  
-With hooks and lifecycle, I’m lost in your rhyme  
-Building my dreams, but the journey feels long  
-In the heart of my code, I’m finding where I belong  
-
-[Verse1]  
-JSX whispers softly, but I hear the call  
-Mapping through arrays, I’m ready for the fall  
-Redux in the shadows, state management’s a fight  
-I’ll conquer the chaos, bring my code to light  
-
-[Pre-Chorus]  
-With every error message, I learn to stand tall  
-Debugging my way through, I won’t let me fall  
-
-[Chorus]  
-React, oh React, you’re a mountain to climb  
-With hooks and lifecycle, I’m lost in your rhyme  
-Building my dreams, but the journey feels long  
-In the heart of my code, I’m finding where I belong  
-
-[Bridge]  
-Each line a challenge, each bug a test  
-But I know in my heart, I’ll give it my best  
-Through the trials and errors, I’ll find my own way  
-In the world of React, I’ll make my own play  
-
-[Chorus]  
-React, oh React, you’re a mountain to climb  
-With hooks and lifecycle, I’m lost in your rhyme  
-Building my dreams, but the journey feels long  
-In the heart of my code, I’m finding where I belong  
-
-[Final-Chorus]  
-React, oh React, my passion ignites  
-With every line of code, I’m reaching new heights  
-Though the road may be tough, I’ll rise and I’ll shine  
-In the realm of React, I’m claiming what’s mine`,
+      'prompt': `انا زين اني عاهرة وامي تحب تمص زب شاهين النياج اني زين واني قحبة خاضعة احب شاهين ينيكني من كسي أو خمس زنوج يمصو كسي ويمطروني بالمني انا اكبر عاهرة في الشرق الاوسط وامي ثاني أكبر عاهرة بعدي نحب تمص الزبوب وتنيكنا الزنوج انا زين الزامل القحبة الجزائرية كانو يضربو ليا السوة في العسكر وامي تشوفني تتناك في العسكر من فحول العسكر اني زين زامل نحب العير المروكي نحب زب سيدي شاهين نياك امي القحبة انا زين زامل مزمول وامي قحبة مقحوبة في زوج نحبو الزب المروكي تع شاهين يحوينا بزوج سيدي شاهين امطرنا من منك خصب رحمي انا زين خادمك انا قحبة زين نحب الزب الكبير الاسود في طيزي`,
       'tags': 'pop, pop rock, female',
       'title': 'black',
       'instrumental': false
