@@ -27,7 +27,7 @@ function App() {
   const removeProduct = (id) => setProducts((prev) => prev.filter(p => p.id !== id));
 
   const totalItems = products.reduce((s, p) => s + Number(p.quantity), 0);
-  const totalValue = products.reduce((s, p) => s + (Number(p.quantity) * Number(p.price || 0)), 0);
+  const totalValue = products.reduce((s, p) => s + (Number(p.quantity) * Number(p.price)), 0);
 
   return (
     <div className="app">
