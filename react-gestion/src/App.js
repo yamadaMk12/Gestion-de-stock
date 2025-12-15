@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import ProductForm from './components/ProductForm';
 import ProductList from './components/ProductList';
+import Navbar from './components/Navbar';
 
 function App() {
   const [products, setProducts] = useState(() => {
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="app">
+      <Navbar />
       <header>
         <h1>Gestion de stock</h1>
       </header>
