@@ -75,9 +75,6 @@ main {
 .product-item:last-child {
   border-bottom: none;
 }
-.product-item.low {
-  background: #fff6f6;
-}
 .product-item .meta {
   display: flex;
   gap: 12px;
@@ -90,17 +87,14 @@ main {
   color: var(--muted);
   font-size: 13px;
 }
-.controls {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+.product-item .qty {
+  color: var(--muted);
+  font-size: 13px;
 }
-.controls button {
-  padding: 6px 8px;
-}
-.controls .delete {
+.product-item .delete {
   background: #fbeaea;
   border: 1px solid #f5c6c6;
+  padding: 6px 8px;
 }
 .empty {
   color: var(--muted);

@@ -24,10 +24,6 @@ function App() {
     ]);
   };
 
-  const updateProduct = (id, updates) => {
-    setProducts((prev) => prev.map(p => p.id === id ? { ...p, ...updates } : p));
-  };
-
   const removeProduct = (id) => setProducts((prev) => prev.filter(p => p.id !== id));
 
   const totalItems = products.reduce((s, p) => s + Number(p.quantity), 0);
@@ -49,7 +45,6 @@ function App() {
         <section className="right">
           <ProductList
             products={products}
-            onUpdate={updateProduct}
             onDelete={removeProduct}
           />
         </section>
