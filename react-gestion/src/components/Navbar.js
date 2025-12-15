@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom"
+
 export default function Navbar() {
     return <>
         <nav className="navbar">
-            <a>Dashboard</a>
-            <a>Vente</a>
-            <a>Client</a>
-            <a>Stock</a>
-            <a>Account</a>
+            <Link to="/Vente">Vente</Link>
+            <Link to="/Client">Client</Link>
+            <Link to="/Stock">Stock</Link>
         </nav>
     </>
 }
