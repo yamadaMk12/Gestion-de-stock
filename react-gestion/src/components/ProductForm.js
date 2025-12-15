@@ -9,7 +9,7 @@ export default function ProductForm({ onAdd }) {
     e.preventDefault();
     if (!name) return;
     const p = {
-      name: name.trim(),
+      name: name,
       price: parseFloat(price),
       quantity: parseInt(quantity),
     };
