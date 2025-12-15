@@ -1,8 +1,7 @@
-import React from 'react';
 import ProductItem from './ProductItem';
 
 export default function ProductList({ products, onDelete }) {
-  if (!products || products.length === 0) {
+  if (!products || products.length == 0) {
     return <div className="empty">No products yet. Add some to begin.</div>;
   }
 

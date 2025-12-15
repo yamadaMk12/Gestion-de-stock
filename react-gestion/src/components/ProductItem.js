@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function ProductItem({ product, onDelete }) {
   return (
     <div className="product-item">
