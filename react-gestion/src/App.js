@@ -10,7 +10,6 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
       <BrowserRouter>
-        {console.log("Render App component")}
         <div className="app">
           <Navbar />
           <Routes>

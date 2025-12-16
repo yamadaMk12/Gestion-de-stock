@@ -1,12 +1,15 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import ParentName from "./parentName"
 import ParentOfChildes from "./ParentOfChildes"
 
 export default function Test() {
     let [c, setC] = useState(0)
     let [text, setText] = useState("")
+    const element = useRef()
+    const focus = () => {
+        console.log(element)
+    }
     return <>
-        {console.log("Render Test component")}
         <p>count: {c}</p>
         <button onClick={() => setC(c+1)}>Increase</button>
         <button onClick={() => setC(c-1)}>Decrease</button>
@@ -17,5 +20,9 @@ export default function Test() {
         <ParentName />
         <hr></hr>
         <ParentOfChildes />
+        <hr></hr>
+        <input ref={element} />
+        {console.log(element)}
+        <button onClick={focus}>Click focus</button>
     </>
 }
