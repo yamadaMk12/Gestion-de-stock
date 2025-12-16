@@ -1,13 +1,14 @@
-import { useState } from "react"
 import Child1 from "./Child1"
-import Child2 from "./Child2"
+import { NameContext } from "../context/nameProvider"
 
 export default function Vente() {
-    const [ name, setName ] = useState("Yama")
+    const name = "Yama"
     return (
         <>
-            <Child1 name={name}/>
-            <Child2 setName={setName}/>
+            <NameContext.Provider value={name}>
+                <h1>This is Parent who held the var name</h1>
+                <Child1/>
+            </NameContext.Provider>
         </>
     )
 }
