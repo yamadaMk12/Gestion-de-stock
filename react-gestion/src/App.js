@@ -15,7 +15,7 @@ function App() {
           <Route path='/' element={<Stock />}/>
           <Route path='/stock' element={<Stock />}/>
           <Route path='/client' element={<Client />}/>
-          <Route path='/vente' element={<Vente />}/>
+          <Route path='/vente' element={<Vente name="Yama" />}/>
         </Routes>
       </div>
     </BrowserRouter>
