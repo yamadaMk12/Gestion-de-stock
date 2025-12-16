@@ -1,6 +1,7 @@
 import { useRef, useState } from "react"
 import ParentName from "./parentName"
 import ParentOfChildes from "./ParentOfChildes"
+import ChildType from "./ChildType"
 
 export default function Test() {
     let [c, setC] = useState(0)
@@ -16,6 +17,7 @@ export default function Test() {
         <hr></hr>
         <p>Text: {text}</p>
         <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+        <ChildType text={Number(text)} />
         <hr></hr>
         <ParentName />
         <hr></hr>
