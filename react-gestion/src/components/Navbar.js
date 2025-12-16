@@ -6,6 +6,7 @@ export default function Navbar() {
             <Link to="/Vente">Vente</Link>
             <Link to="/Client">Client</Link>
             <Link to="/Stock">Stock</Link>
+            <Link to="/Test">Test</Link>
         </nav>
     </>
 }
