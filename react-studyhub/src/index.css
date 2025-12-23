@@ -104,3 +104,35 @@ li button {
     gap: 10px;
   }
 }
+
+.login {
+  max-width: 450px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login > h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login > label {
+  text-align: left;
+  margin-bottom: 10px;
+  max-width: fit-content;
+  text-wrap: initial;
+}
+
+.login > input {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.login > button {
+  margin: 1rem 0 0 0;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+}
