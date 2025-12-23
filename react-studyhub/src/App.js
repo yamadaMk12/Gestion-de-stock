@@ -5,6 +5,7 @@ import TaskPage from "./components/TaskPage";
 
 
 export default function App() {
+  console.log("app rendered")
   const { isAuth, login, signOut, error } = useAuth();
   if (!isAuth) {
     return (
