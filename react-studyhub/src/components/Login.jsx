@@ -20,8 +20,8 @@ export default function Login({ onLogin, error }) {
         ref={passwordRef}
         type="password"
       />
-      <button onClick={() => onLogin(passwordRef.current)}>Login</button>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      <button onClick={() => onLogin(userRef.current, passwordRef.current)}>Login</button>
+      {error && <p className="errorLogin">{error}</p>}
     </div>
   );
 }

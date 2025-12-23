@@ -1,27 +1,24 @@
-import { useState, useRef } from "react";
+import { memo, useRef } from "react";
 
-export default function TaskForm({ onAdd }) {
-  const [title, setTitle] = useState("");
+export default memo(function TaskForm({ onAdd }) {
+  console.log("render task form");
   const inputRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!title.trim()) return;
+    if (!inputRef.current.value.trim()) return;
 
-    onAdd(title);
-    setTitle("");
-    inputRef.current.focus();
+    onAdd(inputRef.current.value);
+    inputRef.current.value = "";
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <input
         ref={inputRef}
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
         placeholder="Nouvelle tâche"
       />
       <button>Ajouter</button>
     </form>
   );
-}
+});

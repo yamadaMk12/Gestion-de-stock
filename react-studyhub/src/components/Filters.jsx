@@ -1,4 +1,6 @@
-export default function Filters({ filter, setFilter, search, setSearch }) {
+import { memo } from "react";
+
+export default memo( function Filters({ filter, setFilter, search, setSearch }) {
   return (
     <div>
       <select value={filter} onChange={(e) => setFilter(e.target.value)}>
@@ -14,4 +16,4 @@ export default function Filters({ filter, setFilter, search, setSearch }) {
       />
     </div>
   );
-}
+});

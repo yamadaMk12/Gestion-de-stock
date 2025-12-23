@@ -1,6 +1,8 @@
+import { memo } from "react";
 import TaskItem from "./TaskItem";
 
-export default function TaskList({ tasks, onToggle, onDelete }) {
+export default memo(function TaskList({ tasks, onToggle, onDelete }) {
+  console.log("render task list");
   return (
     <ul>
       {tasks.map((task) => (
@@ -13,4 +15,4 @@ export default function TaskList({ tasks, onToggle, onDelete }) {
       ))}
     </ul>
   );
-}
+});

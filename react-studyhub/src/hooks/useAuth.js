@@ -1,11 +1,16 @@
 import { useState } from "react";
+import useLocalStorage from "./useLocalStorage";
 
 export default function useAuth() {
-  const [isAuth, setIsAuth] = useState(false);
+  const [isAuth, setIsAuth] = useState(
+    JSON.parse(localStorage.getItem("isAuth")) || false
+  );
   const [error, setError] = useState("");
 
-  const login = (password) => {
-    if (password === "1234") {
+  useLocalStorage("isAuth", isAuth)
+
+  const login = (username, password) => {
+    if (password.value === "1234" && username.value === "yamada") {
       setIsAuth(true);
       setError("");
     } else {
@@ -13,5 +18,9 @@ export default function useAuth() {
     }
   };
 
-  return { isAuth, login, error };
+  const signOut = () => {
+    setIsAuth(false);
+  }
+
+  return { isAuth, login, signOut, error };
 }
